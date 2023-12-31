@@ -82,6 +82,9 @@ function setup() {
   raster = new Raster(6,9);
   
   raster.berekenCelGrootte();
+  for (var b = 0;b < 60;b++) {
+    bommenArray.push(new Bom());
+  }
   bom1 = new Bom();
   
   eve = new Jos();

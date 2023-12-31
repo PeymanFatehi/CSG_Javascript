@@ -4,6 +4,7 @@ var keverY;
 
 function preload() {
   kater = loadImage("images/brieck.jpg");
+  katerKlein = loadImage("images/brieck_klein.jpg");
   bomen = loadImage("images/bomen.jpg");
   kever = loadImage("images/sprites/kever.png");
 }
@@ -16,8 +17,9 @@ function setup() {
 }
 
 function draw() {
-  background(bomen);  
-  // image(katerKlein,0,0);
+  background(kater);
+  background('grey');  
+  image(katerKlein,25,25,400,400);
   keverX+=random(-5,5);
   keverY+=random(-5,5);
   // image(kever,keverX,keverY);

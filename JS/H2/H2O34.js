@@ -130,6 +130,11 @@ function draw() {
   eve.beweeg();
   alice.beweeg();
   bob.beweeg();
+  
+  if (alice.x == bob.x && alice == bob.y) {
+    bob.beweeg();
+  }
+  
   eve.toon();
   alice.toon();
   bob.toon();
